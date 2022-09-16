@@ -1,0 +1,92 @@
+
+html {
+    font-size: 12px;
+}
+
+*{
+    margin: 0px;
+    
+}
+
+.banner{
+    width: 100%;
+    height: 6rem;
+    font-size: 2rem;
+    display: flex;
+    background-color:#1A4340;
+    align-items: center;
+}
+
+.banner h2{
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    font-size: 2rem;
+    align-content:center;
+    padding: 0rem 0rem 0rem 4rem;
+    font-size: 300;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+    padding: 0rem 2rem 0rem 2rem;
+
+}
+
+.filter{
+    color: #1A4340;
+    grid-row: y0 / y4;
+    padding: 3rem 5rem 4rem 2rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+
+.filter p{ 
+    font-size: 1.3rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.filter h3{
+    color: #1A4340;
+    font-size:1.7rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.filter hr{
+    background-color:#1A4340;
+    border-color: #1A4340;
+    border-width: 0.05rem;
+}
+
+.card {
+    padding: 3rem;
+}
+
+.card .description {
+    padding: 1.5rem 2rem 0rem 2rem;
+}
+
+img{
+    width: 100%;
+    
+}
+
+.category{
+    color: #1A4340;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+}
+
+.title{
+    font-family: 'Merriweather', serif;
+    font-size: 1.4rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.price{
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    color:  #1A4340;
+    padding: 1rem 0rem 0rem 0rem;
+}
