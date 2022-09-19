@@ -9,6 +9,8 @@ html {
     box-sizing: border-box;
 }
 
+/* ++++ NAV ++++ */
+
 .nav{
     width: 100%;
     height: 8rem;
@@ -82,6 +84,8 @@ html {
     font-size: 300;
 }
 
+/* ++++ GRID ++++ */
+
 .grid{
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
@@ -89,6 +93,8 @@ html {
     padding: 0rem 2rem 0rem 2rem;
 
 }
+
+/* ++++ FILTER ++++ */
 
 .filter{
     color: #1A4340;
@@ -114,6 +120,8 @@ html {
     border-color: #1A4340;
     border-width: 0.05rem;
 }
+
+/* ++++ CARD ++++ */
 
 .card {
     padding: 3rem;
@@ -147,8 +155,11 @@ img{
     padding: 1rem 0rem 0rem 0rem;
 }
 
+/* ++++ FOOTER ++++ */
+
 footer{
     width: 100%;
     height: 20rem;
     background-color: #431A1D;
 }
+
