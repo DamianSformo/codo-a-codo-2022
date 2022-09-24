@@ -73,7 +73,7 @@ a{
     display: flex;
 }
 
-.main li a{
+.main li{
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
