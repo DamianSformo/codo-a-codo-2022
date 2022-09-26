@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css--> 
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    -->
+
+    <!--googleFonts--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!--boxincons--> 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/d155a8c12c.js" crossorigin="anonymous"></script>
+
+    <title>Detail</title>
+</head>
+<body>
+
+    <header>
+        <div class="extra">
+            <ul class="information">
+                <li class="items"><p>Entrega disponible para todo el país</p></li>
+                <li class="items"><p>+54 11 3243 2345</p></li>
+            </ul>
+
+            <ul class="contact">
+                <li class="items"><i class="fa-brands fa-facebook-f"></i></li>
+                <li class="items"><i class="fa-brands fa-twitter"></i></li>
+                <li class="items"><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
+
+        <nav class="nav">
+            <div class="container">
+                <h1><a href="../html/index.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png" alt=""></a></h1>
+                <ul class="main">
+                    <li><a href="../html/products.html">TIENDA</a></li>
+                    <li><a href="../html/about.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="../html/locales.html">LOCALES</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h2>PRODUCTOS</h2>
+    </div>
+
+    <div class="detailProduct">
+        <div class="detailImg">
+            <img class="dImg" src="https://cdn-icons-png.flaticon.com/512/4857/4857064.png">
+        </div>
+        
+        <div class="detailDescription">
+            <span class="detailCategory">PRODUCTOS / CAFÉ</span>
+            <h4 class="detailIitle">Café Molido Tipo Italiano</h4>
+            <h3 class="detailPrice">$2900 - $4080</h3>
+            <p class="detailCuotas">Paga en 12 cuotas de $450 - $625</p>
+
+            <div class="detailPresentation">
+                <form class="detailForm">  
+                    <div class="detailType">
+                        <label class="detailPresentationTitle" for="cars">Intensidad</label>
+                        <input type="range" min="1" max="3" value="2" step="1">
+                    </div>
+
+                    <div class="detailType">
+                        <label class="detailPresentationTitle" for="cars">Presentación</label>
+                        <input type="number" value="500" name="valor" step="250" min="250" max="1000">
+                    </div>
+
+                    <div class="detailType">
+                        <label class="detailPresentationTitle" for="cars">Molienda</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Grano</option>
+                            <option value="saab">Expreso</option>
+                            <option value="fiat">Filtro de Tela</option>
+                            <option value="audi">Italiana</option>
+                        </select>
+                    </div>
+                    
+                    <p class="detailPresentationTitle"><i class="fa-solid fa-truck-ramp-box"></i>    Seleccioná el envio:</p>
+
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Retiro por el local (gratis)</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">Retiro por punto de retiro</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">Envio a domicilio</label>
+
+                    <div>
+                        <p class="detailPresentationTitle"><i class="fa-solid fa-comment-dots"></i>    Información extra:</p>
+                        <textarea class= "detailText"></textarea>
+                    </div>
+                
+                    
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

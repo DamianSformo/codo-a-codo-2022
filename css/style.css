@@ -5,6 +5,7 @@ html {
 
 *{
     margin: 0px;
+    padding: 0px;
     list-style: none;
     box-sizing: border-box;
     /* background-color: #eaeaea; */
@@ -25,7 +26,7 @@ a{
     display: flex;
     background-color: #431A1D;
     color: white;
-    padding: 0.7rem 4rem 0.7rem 4rem;
+    padding: 0.7rem 5rem 0.7rem 4rem;
     justify-content: space-between;
 }
 
@@ -44,6 +45,25 @@ a{
     padding: 0;
 }
 
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.extra .contact {
+    display: flex;
+    padding-left: 0px;
+}
+
+.contact .items{
+    padding-left: 1rem;
+}
+
+.fa-brands{
+    font-size: 1.1rem;
+
+}
+
 .nav{
     background-color: #1a434000;
     width: 100%;
@@ -55,7 +75,7 @@ a{
 }
 
 .logo{
-    width: 9rem;
+    width: 8rem;
     padding: 0rem 0rem 0rem 2rem;
 }
 
@@ -160,7 +180,7 @@ a{
     padding: 1.5rem 2rem 0rem 2rem;
 }
 
-img{
+.imgproduct{
     width: 100%;
     padding: 1rem;
 }
@@ -184,10 +204,95 @@ img{
     padding: 1rem 0rem 0rem 0rem;
 }
 
+/* ++++ BANNER ++++ */
+
+.imgbanner{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
 /* ++++ FOOTER ++++ */
 
 footer{
     width: 100%;
     height: 20rem;
     background-color: #431A1D;
+}
+
+
+/* ++++ DETAIL ++++ */
+
+.detailProduct {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.detailImg{
+    width: 40%;
+}
+
+.dImg{
+    width: 100%;
+    padding: 2rem;
+}
+
+.detailDescription{
+    width: 40%;
+    padding: 3rem 2rem 4rem 2rem;
+}
+
+.detailCategory{
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.detailIitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    padding: 1rem 0rem 1.2rem 0rem;
+}
+
+.detailPrice{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color:  #1A4340;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.detailCuotas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color:  #1A4340;
+    padding: 0.4rem 0rem 0rem 0rem;
+
+}
+
+.detailPresentation{
+    display: flex;
+    margin:  2rem 0rem 2rem 0rem;
+}
+
+.detailType{
+    display: flex;
+    width: 100%;
+    margin: 1.6rem 0rem 1.6rem 0rem;
+}
+
+.detailPresentationTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 40%;
+}
+
+.detailForm{
+    width: 100%;
+}
+
+.detailText{
+    width: 75%;
 }
