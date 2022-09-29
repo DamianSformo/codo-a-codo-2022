@@ -17,8 +17,13 @@ a{
 
 /* ++++ NAV  ++++ */
 
+header{
+    box-shadow: 0px 0px 20px -5px black;
+}
+
 .header{
     background-color: #1A4340;
+
 }
 
 .extra {
@@ -71,12 +76,12 @@ a{
     padding: 0rem 3rem 0rem 3rem;
     display: flex;
     max-width: 992px;
-    margin: 0 auto;
 }
 
 .logo{
     width: 8rem;
-    padding: 0rem 0rem 0rem 2rem;
+    padding: 1rem;
+    margin: 0rem 1rem 0rem 2rem;
 }
 
 /* .logo:hover{
@@ -206,56 +211,44 @@ a{
 
 /* ++++Informacion ++++ */
 
-.información{
-    display: flex ;
-    width: 1000px;
+.informacion{
+    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    padding: 20px;
+    padding: 0rem 25rem 0rem 25rem;
 }
+
+.informaciones{
+    width: 100%;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
 #img2{
-    width: 300px;
-    height: 450px;
+    width: 100%;
     padding: 1rem;
     border-radius: 5px;
-    float: left;
-    /*margin-right: 15px;*/
-    margin: 10px;
     background-color:  rgb(252, 196, 174);
 }
 
 .texto{
     color: #1A4340;
     font-family: 'Montserrat', sans-serif;
-    /*padding: 2rem;*/
     font-size: 1.5rem;
-    line-height: 1,5;
     text-align: justify;
-    float: none;
-    margin: 20px;
-    padding: 100px 20px 20px 20px;
 }
 #img3{
-    width: 400px;
-    height: 300px;
+    width: 100%;
     padding: 1rem;
     border-radius: 5px;
-    float: right;
-   /* margin-left: 15px;*/
-    margin: 10px;
-    background-color: rgb(252, 196, 174);
+    background-color:  rgb(252, 196, 174);
 }
 #img4{
-    width: 300px;
-    height: 450px;
+    width: 100%;
     padding: 1rem;
     border-radius: 5px;
-    float: left;
-    /*margin-right: 15px;*/
-    margin: 10px;
-    background-color: rgb(252, 196, 174);
+    background-color:  rgb(252, 196, 174);
 }
+
 /* ++++ BANNER ++++ */
 
 .imgbanner{
@@ -282,6 +275,7 @@ footer{
     display: flex;
     margin: auto;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .detailImg{
@@ -361,15 +355,16 @@ footer{
     animation: change 20s infinite alternate linear;
     width: 400%;
 }
+
 .slider li{
     width: 100%;
     list-style: none;
-}
-.slider img{
+} 
+ .slider img{
     width: 100%;
     height: 100%;
-}
-@keyframes change{
+} 
+ @keyframes change{
     0%{margin-left: 0;}
     20%{margin-left: 0;}
     25%{margin-left: -100%;}
@@ -378,4 +373,24 @@ footer{
     70%{margin-left: -200%;}
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
-} 
+}  
+
+/* ++++ SOBRE NOSOTROS ++++ */
+
+.bannerNosotros {
+        width: 100%;
+        height: 10rem;
+        font-size: 2rem;
+        display: flex;
+        background-color:#1A4340;
+        align-items: center;
+}
+
+.bannerNosotros h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    align-content:center;
+    padding: 0rem 0rem 0rem 25rem;
+    font-size: 300;
+}
