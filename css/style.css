@@ -219,33 +219,50 @@ header{
 
 .informaciones{
     width: 100%;
-    padding: 3rem 0rem 3rem 0rem;
+}
+
+.informaciones .subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 #img2{
     width: 100%;
-    padding: 1rem;
     border-radius: 5px;
-    background-color:  rgb(252, 196, 174);
 }
 
-.texto{
+.text{
     color: #1A4340;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding: 4rem 0rem 4rem 0rem;
 }
+
+.text-es{
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding: 2rem 0rem 4rem 0rem;
+}
+
+.text-la{
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding: 4rem 0rem 1rem 0rem;
+}
+
 #img3{
     width: 100%;
-    padding: 1rem;
     border-radius: 5px;
-    background-color:  rgb(252, 196, 174);
 }
 #img4{
     width: 100%;
-    padding: 1rem;
     border-radius: 5px;
-    background-color:  rgb(252, 196, 174);
 }
 
 /* ++++ BANNER ++++ */
@@ -371,7 +388,7 @@ header{
 
 .bannerNosotros {
         width: 100%;
-        height: 10rem;
+        height: 12rem;
         font-size: 2rem;
         display: flex;
         background-color:#1A4340;
