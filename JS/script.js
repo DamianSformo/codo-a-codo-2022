@@ -17,8 +17,6 @@ function initMap() {
 
   let names = ["Buenos Aires", "Martínez", "Concordia", "Rosario"];
 
-
-
   for (i = 0; i < locales.length; i++) {
     let marker = new google.maps.Marker({
       position: locales[i],
