@@ -24,6 +24,8 @@ function initMap() {
       title: "Mi Tienda Café",
     });
 
+    var text = names[i] + "<h1>Mi Tienda Café</h1>" + "<h3>Información</h3>";
+
     let information = new google.maps.InfoWindow({
       content: text,
     });
@@ -31,8 +33,7 @@ function initMap() {
     marker.addListener("click", function () {
       information.open(map, marker);
     });
-
-    var text = names[i+1] + "<h1>Mi Tienda Café</h1>" + "<h3>Información</h3>";
+    
   }
 }
 
