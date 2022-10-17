@@ -82,10 +82,6 @@ header{
     margin: 0rem 1rem 0rem 2rem;
 }
 
-/* .logo:hover{
-    transition: .3s;
-} */
-
 .container{
     display: flex;
     align-items: center;
@@ -206,7 +202,7 @@ header{
     padding: 1rem 0rem 0rem 0rem;
 }
 
-/* ++++Informacion ++++ */
+/* ++++ INFO ++++ */
 
 .informacion{
     width: 100%;
@@ -266,15 +262,13 @@ header{
 /* ++++ BANNER ++++ */
 
 .imgbanner{
+    margin-top: 5rem;
     display: flex;
     width: 100%;
     height: 350px;
     object-fit: cover;
     box-shadow: 0px 0px 20px -1px black;
 }
-
-
-
 
 /* ++++ DETAIL ++++ */
 
@@ -411,14 +405,6 @@ header{
 }
 
 .index-grid-2{
-    /* width: 100%;
-    max-width: 992px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto; */
-
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
     padding: 0%;
@@ -426,7 +412,8 @@ header{
 
 .index-grid-2 .card{
     background-color: #1A4340;
-    margin: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 0;
     padding: 0rem;
     border-radius: 8px;
     box-shadow: 0.2px 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -464,9 +451,6 @@ header{
     font-weight: 800;
 }
 
-
-/* ++++ FOOTER ++++ */
-
 /* ++++ FOOTER ++++ */
 
 footer{
@@ -503,4 +487,12 @@ footer .container ul{
 
 footer .container ul li{
     margin: 2rem 0rem 2rem 0rem;
+}
+
+/* ++++ GOOGLE MAPS ++++ */
+
+#map{
+    margin: 5rem;
+    height: 1000px;
+    width: 50%;
 }
