@@ -15,7 +15,7 @@ function initMap() {
 
   let i = 0;
 
-  let cad = ["Buenos Aires", "Martínez", "Concordia", "Rosario"];
+  let names = ["Buenos Aires", "Martínez", "Concordia", "Rosario"];
 
 
 
@@ -34,24 +34,8 @@ function initMap() {
       information.open(map, marker);
     });
 
-    var text = cad[i+1] + "<h1>Mi Tienda Café</h1>" + "<h3>Información</h3>";
+    var text = names[i+1] + "<h1>Mi Tienda Café</h1>" + "<h3>Información</h3>";
   }
 }
 
 window.initMap = initMap;
-
-// var text = '<h1>Nombre del lugar</h1>' + '<p>Información</p>';
-
-// const marcador = new google.maps.Marker({
-//     position: {lat: -34.5985351, lng:-58.391916},
-//     map: map,
-//     title: "Mi marcador"
-// });
-
-// var information = new google.maps.InfoWindow({
-//     content: text,
-// });
-
-// marcador.addListener('click', function(){
-//     information.open(map, marcador);
-// });
