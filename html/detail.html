@@ -27,6 +27,8 @@
 
     <script src="https://kit.fontawesome.com/d155a8c12c.js" crossorigin="anonymous"></script>
 
+    <script src="../javascript/js.js"></script>
+
     <title>Detail</title>
 </head>
 <body>
@@ -57,8 +59,6 @@
         </nav>
     </header>
 
-    
-
     <div class="detailProduct">
         <div class="detailImg">
             <img class="dImg" src="https://cdn-icons-png.flaticon.com/512/4857/4857064.png">
@@ -71,54 +71,123 @@
             <p class="detailCuotas">Paga en 12 cuotas de $450 - $625</p>
 
             <div class="detailPresentation">
+
                 <form class="detailForm">  
+
                     <div class="detailType">
-                        <label class="detailPresentationTitle" for="cars">Intensidad</label>
-                        <input type="range" min="1" max="3" value="2" step="1">
+                        <label class="detailPresentationTitle">Intensidad</label>
+                        <input type="range" name="intensity" value="2" min="1" max="3" step="1">
                     </div>
 
                     <div class="detailType">
-                        <label class="detailPresentationTitle" for="cars">Presentación</label>
-                        <input type="number" value="500" name="valor" step="250" min="250" max="1000">
+                        <label class="detailPresentationTitle">Presentación</label>
+                        <input type="number" name="weight" value="500" step="250" min="250" max="1000">
+                        <p>gr</p>
                     </div>
 
                     <div class="detailType">
-                        <label class="detailPresentationTitle" for="cars">Molienda</label>
-                        <select id="cars" name="cars">
-                            <option value="volvo">Grano</option>
-                            <option value="saab">Expreso</option>
-                            <option value="fiat">Filtro de Tela</option>
-                            <option value="audi">Italiana</option>
+                        <label class="detailPresentationTitle">Molienda</label>
+                        <select name="grinding">
+                            <option value="grano">Grano</option>
+                            <option value="expreso">Expreso</option>
+                            <option value="filtro de tela">Filtro de Tela</option>
+                            <option value="italiana">Italiana</option>
                         </select>
                     </div>
-                    
-                    <p class="detailPresentationTitle"><i class="fa-solid fa-truck-ramp-box"></i>    Seleccioná el envio:</p>
 
-                    <input type="radio" id="html" name="fav_language" value="HTML">
-                    <label for="html">Retiro por el local (gratis)</label><br>
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">Retiro por punto de retiro</label><br>
-                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="javascript">Envio a domicilio</label>
+
+                    <div>
+                        <label class="detailPresentationTitle"><i class="fa-solid fa-truck-ramp-box"></i>    Seleccioná el envio:</label>
+                        <div>
+                            <input type="radio" name="delivery" value="retiro por el local">Retiro por el local (gratis) </br>
+                            <input type="radio" name="delivery" value="retiro por punto de retiro">Retiro por punto de retiro  </br>
+                            <input type="radio" name="delivery" value="envio a domicilio">Envio a domicilio  </br>
+                        </div>
+                    </div>
 
                     <div>
                         <p class="detailPresentationTitle"><i class="fa-solid fa-comment-dots"></i>    Información extra:</p>
-                        <textarea class= "detailText"></textarea>
+                        <textarea class= "detailText" name="extra"></textarea>
                     </div>
-                
-                    <!-- DESCRIPCIÓN - INFORMACIÓN - ETC -->
 
-                     <!-- FOOTER -->
-
+                    <button type="submit">Calcular precio</button>
                 </form>
+
+                <div class="aaa"></div>
+
             </div>
+            
         </div>
+
+    </div>
+
+    <div class="description">
+        <h3 class="infoTitle">INFORMACIÓN ADICIONAL</h3>
+
+        <hr>
+        <div class="specifications">
+            <h6 class="specificationsTitle">DESCRIPCIÓN</h6>
+            <p class="specificationsDescription"> Blend Colombiano y Brasileño, con un tostado natural tipo suizo.</p>
+        </div>
+        <hr>
+        <div class="specifications">
+            <h6 class="specificationsTitle">PRESENTACIÓN</h6>
+            <p class="specificationsDescription">250g, 500g, 1kg.</p>
+        </div>
+        <hr>
+        <div class="specifications">
+            <h6 class="specificationsTitle">MOLIENDA</h6>
+            <p class="specificationsDescription">Grano, Expreso, Filtro de Tela, Italiana.</p>
+        </div>
+        <hr>
 
     </div>
 
     </div>
 
     <footer>
+        <div class="container">
+            <div class="column">
+                <h2>Sobre Nosotros</h2>
+                <ul>
+                    <li>Historia</li>
+                    <li>Nuestro Café</li>
+                    <li>Historia</li>
+                    <li>Canales oficiales</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2>Tienda</h2>
+                <ul>
+                    <li>Mi Cuenta</li>
+                    <li>Productos</li>
+                    <li>¿Cómo comprar?</li>
+                    <li>Envío</li>
+                    <li>Devolución</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2>Atención al cliente</h2>
+                <ul>
+                    <li>Contacto</li>
+                    <li>Medios de Pago</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h2>Atención al cliente</h2>
+                <ul>
+                    <li>Contacto</li>
+                    <li>Medios de Pago</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <i class='bx bxl-instagram' style='color:#fcc4ae'  ></i>
+        <i class='bx bxl-facebook-circle' style='color:#fcc4ae' ></i>
+        <i class='bx bxl-whatsapp' style='color:#fcc4ae'  ></i> -->
 
     </footer>
     

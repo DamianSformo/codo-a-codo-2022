@@ -280,9 +280,58 @@ header{
 
 /* ++++ DETAIL ++++ */
 
+.description {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.infoTitle{
+
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.descriptionTitle{
+
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.textTitle{
+    margin-top: 1rem;
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.specifications{
+    display: flex;
+}
+
+.specificationsTitle{
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    width: 15%;
+    font-size: 1.2rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.specificationsDescription{
+    color: #1A4340;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
 .detailProduct {
     display: flex;
-    margin: auto;
+    margin-left: auto;
     justify-content: center;
     margin-top: 2rem;
 }
@@ -330,7 +379,6 @@ header{
 }
 
 .detailPresentation{
-    display: flex;
     margin:  2rem 0rem 2rem 0rem;
 }
 
