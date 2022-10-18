@@ -83,16 +83,20 @@ window.addEventListener("load", function() {
                 break;
         }
 
-        if(delivery.value == ""){
-            alert("Por favor selecioná el método de envio para continuar");
+        if((delivery.value == "") || (weightValue == "750")){
+            if(weightValue == "750"){
+                alert("No queda stock de este producto, por favor cambiá la presentación.");
+            } else{
+                alert("Por favor selecioná el método de envío para continuar.");
+            }
         } else {
             if(document.querySelector(".price")){
                 element = document.querySelector(".price");
-                element.textContent = "Precio: " + priceInitial;
+                element.textContent = "Precio: $" + priceInitial;
             } else {
                 const newElement = document.createElement("div");
                 newElement.classList.add("price");
-                newElement.textContent = "Precio: " + priceInitial;
+                newElement.textContent = "Precio: $" + priceInitial;
                 document.querySelector(".aaa").appendChild(newElement);
             }
     }

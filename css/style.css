@@ -4,6 +4,7 @@ html {
 }
 
 *{
+    font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -197,9 +198,10 @@ header{
 
 .price{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     color:  #1A4340;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
 }
 
 /* ++++ INFO ++++ */
@@ -339,7 +341,7 @@ header{
 
 .detailDescription{
     width: 40%;
-    padding: 3rem 2rem 4rem 2rem;
+    padding: 3rem 2rem 0rem 2rem;
 }
 
 .detailCategory{
@@ -359,7 +361,7 @@ header{
     font-size: 2rem;
     font-weight: 800;
     color:  #1A4340;
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 0.5rem 0rem 0rem 0rem;
 }
 
 .detailCuotas{
@@ -413,6 +415,31 @@ header{
     width: 100%;
     height: 100%;
 } 
+
+.deliverys{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem 0rem 1.5rem 1rem;
+}
+
+.deliverys input{
+    margin: 0.25rem 0.5rem 0.25rem 0rem;
+}
+
+textarea.detailText{
+    margin: 1rem 0rem 1.5rem 0rem;
+    width: 64%;
+}
+
+.calculate{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+
  @keyframes change{
     0%{margin-left: 0;}
     20%{margin-left: 0;}
