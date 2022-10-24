@@ -45,47 +45,74 @@
 
 </head>
 
-<body>
+<header>
+    <div class="extra">
+        <ul class="information">
+            <li class="items">
+                <p>Entrega disponible para todo el país</p>
+            </li>
+            <li class="items">
+                <p>+54 11 3243 2345</p>
+            </li>
+        </ul>
 
-    <header>
-        <div class="extra">
-            <ul class="information">
-                <li class="items">
-                    <p>Entrega disponible para todo el país</p>
-                </li>
-                <li class="items">
-                    <p>+54 11 3243 2345</p>
-                </li>
-            </ul>
+        <ul class="contact">
+            <li class="items"><a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class="items"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="items"><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
 
-            <ul class="contact">
-                <li class="items"><a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="items"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="items"><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+    <nav class="nav">
+        <div class="container">
+            <h1><a href="../index.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png"
+                        alt=""></a></h1>
+            <ul class="main">
+                <li><a href="../html/products.html">TIENDA</a></li>
+                <li><a href="../html/shops.html">LOCALES</a></li>
+                <li><a href="../html/aboutUs.html">SOBRE NOSOTROS</a></li>
             </ul>
         </div>
+    </nav>
+</header>
 
-        <nav class="nav">
-            <div class="container">
-                <h1><a href="../index.html"><img class="logo"
-                            src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png" alt=""></a></h1>
-                <ul class="main">
-                    <li><a href="../html/products.html">TIENDA</a></li>
-                    <li><a href="../html/shops.html">LOCALES</a></li>
-                    <li><a href="../html/aboutUs.html">SOBRE NOSOTROS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
+<body>
+
     <!-- MAP -->
+    <div class="shops-grid">
+        <div id="map"></div>
+        <div class="card">
+            <h3>Mi Tienda Café - Buenos Aires</h3>
+            <p><b>Horario:</b> lunes a sábado de 8:00 a 19:00</p>
+            <p><b>Dirección:</b> Paraguay 1702, C.A.B.A.</p>
+        </div>
+        <div class="card">
+            <h3>Mi Tienda Café - Martínez</h3>
+            <p><b>Horario:</b> lunes a sábado de 8:00 a 19:00</p>
+            <p><b>Dirección:</b> Tucumán 1184, Martínez, Buenos Aires</p>
+        </div>
+        <div class="card">
+            <h3>Mi Tienda Café - Concordia</h3>
+            <p><b>Horario:</b> lunes a sábado de 9:00 a 21:00</p>
+            <p><b>Dirección:</b> Quintana 334, Concordia, Entre Ríos</p>
+        </div>
+        <div class="card">
+            <h3>Mi Tienda Café - Rosario</h3>
+            <p><b>Horario:</b> martes a domingo de 9:00 a 20:30</p>
+            <p><b>Dirección:</b> Santa Fe 3232, Rosario, Sante Fe</p>
+        </div>
+    </div>
 
-    <div id="map"></div>
+    <div class="imgbanner-box">
+        <img class="imgbanner"
+            src="https://png.pngtree.com/png-clipart/20210627/original/pngtree-fashion-coffee-promotion-promotion-banner-png-image_6465793.jpg">
+        </img>
+    </div>
 
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap"
-    defer>
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap"
+        defer>
+        </script>
+</body>
 
 <footer>
     <div class="container">
@@ -126,6 +153,5 @@
     </div>
 
 </footer>
-</body>
 
 </html>

@@ -16,6 +16,12 @@ function initMap() {
   let i = 0;
 
   let names = ["Buenos Aires", "Martínez", "Concordia", "Rosario"];
+  let info = [
+    "<ul style= 'font-size: 1.5rem'><p><b>Horario:</b> lunes a sábado de 8:00 a 19:00</p> <p><b>Dirección:</b> Paraguay 1702, C.A.B.A.</p></ul>", 
+    "<ul style= 'font-size: 1.5rem'><p><b>Horario:</b> lunes a sábado de 8:00 a 19:00</p> <p><b>Dirección:</b> Tucumán 1184, Martínez, Buenos Aires</p></ul>", 
+    "<ul style= 'font-size: 1.5rem'><p><b>Horario:</b> lunes a sábado de 9:00 a 21:00</p> <p><b>Dirección:</b> Quintana 334, Concordia, Entre Ríos</p></ul>", 
+    "<ul style= 'font-size: 1.5rem'><p><b>Horario:</b> martes a domingo de 9:00 a 20:30</p> <p><b>Dirección:</b> Santa Fe 3232, Rosario, Sante Fe</p></ul>"
+  ];
 
   for (i = 0; i < locales.length; i++) {
     let marker = new google.maps.Marker({
@@ -24,7 +30,7 @@ function initMap() {
       title: "Mi Tienda Café",
     });
 
-    var text = names[i] + "<h1>Mi Tienda Café</h1>" + "<h3>Información</h3>";
+    var text = names[i] + "<h1>Mi Tienda Café</h1>" + info[i];
 
     let information = new google.maps.InfoWindow({
       content: text,
