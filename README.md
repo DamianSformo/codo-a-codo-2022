@@ -1,12 +1,20 @@
 # codo-a-codo-2022
 
-IMAGENES
-https://unsplash.com/es/t/food-drink
-https://unsplash.com/es/s/fotos/chocolate
-https://unsplash.com/es/s/fotos/cafe
+TEMÁTICA
+- Tienda de Café
+
+FORMULARIO
+- codo-a-codo-2022/html/detail.html
 
 ÍCONOS
-https://boxicons.com/?query=call
+- Boxicons
+- Favicon
 
 FUENTES
-https://fonts.google.com/specimen/Montserrat
+- https://fonts.google.com/specimen/Montserrat
+
+PÁGINA RESPONSIVE
+- codo-a-codo-2022/html/products.html
+
+API REST
+- Google Maps API
