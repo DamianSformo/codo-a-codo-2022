@@ -18,3 +18,8 @@ PÁGINA RESPONSIVE
 
 API REST
 - Google Maps API
+- codo-a-codo-2022/html/shops.html
+
+ANIMACIÓN
+- Carrousel de imágenes
+- codo-a-codo-2022/index.html

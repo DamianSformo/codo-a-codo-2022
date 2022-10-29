@@ -5,20 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Favicon-->
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 
     <!--css-->
     <link href="../css/style.css" rel="stylesheet" type="text/css">
-
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">   
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    -->
 
     <!--googleFonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +29,7 @@
 
     <!--Google Maps API-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    
-    <!--<script type="module" src="../JS/script.js"></script>-->
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/map-script.js"></script>
 
     <title>Locales</title>
 
@@ -65,13 +55,18 @@
 
     <nav class="nav">
         <div class="container">
-            <h1><a href="../index.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png"
-                        alt=""></a></h1>
+            <h1><a href="../../index.html"><img class="logo"
+                        src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png" alt=""></a></h1>
+            <label for="menu" class="navLabel">
+                <img src="/assets/menu.svg" alt="navMenu">
+            </label>
+            <input type="checkbox" id="menu" class="navInput">
             <ul class="main">
-                <li><a href="../html/products.html">TIENDA</a></li>
+                <li><a href="../products.html">TIENDA</a></li>
                 <li><a href="../html/shops.html">LOCALES</a></li>
                 <li><a href="../html/aboutUs.html">SOBRE NOSOTROS</a></li>
             </ul>
+            <a href="../index.html"><h2 class="text">TIENDA DE CAFÉ</h2></a>
         </div>
     </nav>
 </header>
@@ -103,11 +98,13 @@
         </div>
     </div>
 
-    <div class="imgbanner-box">
-        <img class="imgbanner"
-            src="https://png.pngtree.com/png-clipart/20210627/original/pngtree-fashion-coffee-promotion-promotion-banner-png-image_6465793.jpg">
-        </img>
-    </div>
+    <a href="../html/products.html">
+        <div class="imgbanner-box">
+            <img class="imgbanner"
+                src="../img/banner.jpg">
+            </img>
+        </div>
+    </a>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=initMap"
         defer>

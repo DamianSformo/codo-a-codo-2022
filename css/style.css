@@ -191,6 +191,11 @@ header{
 
 .card {
     padding: 3rem;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translateY(-15px);
 }
 
 .productDescription {
@@ -251,6 +256,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     line-height: 1.8;
+    text-align: justify;
     padding: 4rem 0rem 4rem 0rem;
 }
 
@@ -284,16 +290,16 @@ header{
 .imgbanner{
     margin-top: 5rem;
     display: flex;
-    width: 100%;
-    height: 350px;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
     box-shadow: 0px 0px 20px -1px black;
 }
 
 /* ++++ DETAIL ++++ */
 
 .description {
-    margin: 5rem 20rem 8rem 20rem;
+    margin: 5rem 15rem 8rem 15rem;
     justify-content: center;
 }
 
@@ -336,7 +342,7 @@ header{
     color: #1A4340;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem 1rem 2rem;
 }
 
 .detailProduct {
@@ -560,7 +566,6 @@ footer{
     padding-bottom: 3rem;
     margin-top: 5rem;
     font-size: xx-large;
-    box-shadow: inset 0px 0px 20px -6px black;
 }
 
 footer .container{
@@ -596,10 +601,10 @@ footer .container .contact{
 /* ++++ SHOPS ++++ */
 
 #map{
-    /* border-radius: 3%; */
     height: 1000px;
     width: 100%;
-    grid-row: 1 / 5;    
+    grid-row: 1 / 5;
+    z-index: -1;
 }
 
 .shops-grid{
@@ -635,11 +640,6 @@ footer .container .contact{
 
 /* ++++ MEDIA QUERIES ++++ */
 
-@media screen and (min-width: 1024px){
-    .header{
-    }
-}
-
 @media screen and (max-width: 1024px){
 
     .filter {
@@ -669,6 +669,45 @@ footer .container .contact{
 
     footer .container .contact{
         display: none;
+    }
+    .informacion{
+        padding: 0 4rem 0 4rem;
+    }
+    .bannerNosotros h2{
+        padding: 0 0 0 8rem;
+    }
+    .shops-grid{
+        display: flex;
+        margin: 2rem 0 0 2rem; 
+        flex-direction: column;
+        width: 100%;
+    }
+    #map{
+        height: 1000px;
+        width: 95%;
+    }
+    .shops-grid .card{
+        margin: 2rem 0 0 0;
+        width: 95%;
+    }
+    .description {
+        margin: 5rem;
+    }
+    .specificationsDescription{
+        padding: 1rem 0rem 1rem 5rem;
+    }
+
+    .index-grid, .index-grid-2{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] ;
+        grid-template-rows: [y0] 1fr [y1] 1fr [y2];
+        padding: 0rem 2rem 0rem 2rem;
+    }
+    .detailPresentationTitle{
+        padding: 0 5rem 0 0;
+    }
+    .detailImg, .detailDescription{
+        width: 100%;
     }
 }
 
@@ -786,7 +825,39 @@ footer .container .contact{
     footer .container ul{
         font-size: 1.2rem;
     }
-
-
-    
+    .informacion{
+        padding: 0 2rem 0 2rem;
+    }
+    .bannerNosotros h2{
+        padding: 0 0 0 4rem;
+    }
+    .shops-grid{
+        display: flex;
+        margin: 2rem 0 0 2rem; 
+        flex-direction: column;
+        width: 100%;
+    }
+    #map{
+        height: 1000px;
+        width: 95%;
+    }
+    .shops-grid .card{
+        margin: 2rem 0 0 0;
+        width: 95%;
+    }
+    .description {
+        margin: 2rem;
+    }
+    .specificationsDescription{
+        padding: 1rem 0rem 1rem 5rem;
+    }
+    .detailPresentationTitle{
+        padding: 0 10rem 0 0;
+    }
+    .detailProduct{
+        display: block;
+    }
+    .detailImg, .detailDescription{
+        width: 100%;
+    }
 }

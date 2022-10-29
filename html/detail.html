@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--css--> 
+    <!--css-->
     <link href="../css/style.css" rel="stylesheet" type="text/css">
 
     <!--Favicon-->
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 
-    <!--
+    <!--googleFonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-    <!--googleFonts--> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!--boxincons--> 
+    <!--boxicons-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <script src="https://kit.fontawesome.com/d155a8c12c.js" crossorigin="anonymous"></script>
 
-    <script src="../javascript/js.js"></script>
+    <script src="../javascript/form-script.js"></script>
 
     <title>Detalle</title>
 </head>
-<body>
 
-    <header>
-        <div class="extra">
-            <ul class="information">
-                <li class="items"><p>Entrega disponible para todo el país</p></li>
-                <p class = "query">+54 11 3243 2345</p>
-            </ul>
+<header>
+    <div class="extra">
+        <ul class="information">
+            <li class="items">
+                <p>Entrega disponible para todo el país</p>
+            </li>
+            <p class="query">+54 11 3243 2345</p>
+        </ul>
 
-            <ul class="contact">
-                <li class="items"><a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="items"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="items"><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+        <ul class="contact">
+            <li class="items"><a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class="items"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="items"><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <nav class="nav">
+        <div class="container">
+            <h1><a href="../index.html"><img class="logo"
+                        src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png" alt=""></a></h1>
+            <label for="menu" class="navLabel">
+                <img src="../assets/menu.svg" alt="navMenu">
+            </label>
+            <input type="checkbox" id="menu" class="navInput">
+            <ul class="main">
+                <li><a href="../html/products.html">TIENDA</a></li>
+                <li><a href="../html/shops.html">LOCALES</a></li>
+                <li><a href="../html/aboutUs.html">SOBRE NOSOTROS</a></li>
             </ul>
+            <a href="../index.html">
+                <h2 class="text">TIENDA DE CAFÉ</h2>
+            </a>
         </div>
+    </nav>
+</header>
 
-        <nav class="nav">
-            <div class="container">
-                <h1><a href="../index.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/4857/4857032.png" alt=""></a></h1>
-                <ul class="main">
-                    <li><a href="../html/products.html">TIENDA</a></li>
-                    <li><a href="../html/shops.html">LOCALES</a></li>
-                    <li><a href="../html/aboutUs.html">SOBRE NOSOTROS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+<body>
     <div class="detailProduct">
         <div class="detailImg">
             <img class="dImg" src="https://cdn-icons-png.flaticon.com/512/4857/4857064.png">
         </div>
-        
+
         <div class="detailDescription">
             <a href="../html/products.html"><span class="detailCategory">PRODUCTOS </span></a>
             <span class="detailCategory"> / CAFÉ</span>
@@ -75,8 +79,7 @@
             <p class="detailCuotas">Paga en 12 cuotas de $450 - $625</p>
 
             <div class="detailPresentation">
-
-                <form class="detailForm">  
+                <form class="detailForm">
 
                     <div class="detailType">
                         <label class="detailPresentationTitle">Intensidad</label>
@@ -100,17 +103,21 @@
                     </div>
 
                     <div>
-                        <label class="detailPresentationTitle"><i class="fa-solid fa-truck-ramp-box"></i>    Seleccioná el envío:</label>
+                        <label class="detailPresentationTitle"><i class="fa-solid fa-truck-ramp-box"></i> Seleccioná el
+                            envío:</label>
                         <div class="deliverys">
-                            <input type="radio" name="delivery" value="retiro por el local">Retiro por el local (gratis) </br>
-                            <input type="radio" name="delivery" value="retiro por punto de retiro">Retiro por punto de retiro  </br>
-                            <input type="radio" name="delivery" value="envio a domicilio">Envio a domicilio  </br>
+                            <input type="radio" name="delivery" value="retiro por el local">Retiro por el local (gratis)
+                            </br>
+                            <input type="radio" name="delivery" value="retiro por punto de retiro">Retiro por punto de
+                            retiro </br>
+                            <input type="radio" name="delivery" value="envio a domicilio">Envio a domicilio </br>
                         </div>
                     </div>
 
                     <div>
-                        <p class="detailPresentationTitle"><i class="fa-solid fa-comment-dots"></i>    Información extra:</p>
-                        <textarea class= "detailText" name="extra"></textarea>
+                        <p class="detailPresentationTitle"><i class="fa-solid fa-comment-dots"></i> Información extra:
+                        </p>
+                        <textarea class="detailText" name="extra"></textarea>
                     </div>
 
                     <button class="calculate" type="submit">Calcular precio</button>
@@ -119,7 +126,7 @@
                 <div class="aaa"></div>
 
             </div>
-            
+
         </div>
 
     </div>
@@ -143,50 +150,46 @@
             <p class="specificationsDescription">Grano, Expreso, Filtro de Tela, Italiana.</p>
         </div>
         <hr>
-
     </div>
+</body>
 
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="column">
-                <h2>Sobre Nosotros</h2>
-                <ul>
-                    <li>Historia</li>
-                    <li>Nuestro Café</li>
-                    <li>Canales oficiales</li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <h2>Tienda</h2>
-                <ul>
-                    <li>Mi Cuenta</li>
-                    <li>Productos</li>
-                    <li>¿Cómo comprar?</li>
-                    <li>Envío</li>
-                    <li>Devolución</li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <h2>Atención al cliente</h2>
-                <ul>
-                    <li>Contacto</li>
-                    <li>Medios de Pago</li>
-                </ul>
-            </div>
-
-            <div class="column">
-                <h2>Newsletter</h2>
-                <ul>
-                    <li>Suscribirse</li>
-                </ul>
-            </div>
+<footer>
+    <div class="container">
+        <div class="column">
+            <h2>Sobre Nosotros</h2>
+            <ul>
+                <li>Historia</li>
+                <li>Nuestro Café</li>
+                <li>Canales oficiales</li>
+            </ul>
         </div>
 
-    </footer>
-    
-</body>
+        <div class="column">
+            <h2>Tienda</h2>
+            <ul>
+                <li>Mi Cuenta</li>
+                <li>Productos</li>
+                <li>¿Cómo comprar?</li>
+                <li>Envío</li>
+                <li>Devolución</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Atención al cliente</h2>
+            <ul>
+                <li>Contacto</li>
+                <li>Medios de Pago</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Newsletter</h2>
+            <ul>
+                <li>Suscribirse</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </html>
