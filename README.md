@@ -12,14 +12,14 @@ FORMULARIO
 
 FUENTES
 - https://fonts.google.com/specimen/Montserrat
+- https://unsplash.com/
 
 PÁGINA RESPONSIVE
 - codo-a-codo-2022/html/products.html
 
 API REST
-- Google Maps API
-- codo-a-codo-2022/html/shops.html
+- Google Maps API en /html/shops.html
 
 ANIMACIÓN
-- Carrousel de imágenes
-- codo-a-codo-2022/index.html
+- Carrousel de imágenes en /index.html
+- transformación hover en: /index.html, /products.html y en /shops.html
